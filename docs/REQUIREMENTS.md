@@ -114,7 +114,7 @@ MeshVault — локальный каталог 3D-моделей с просм�
 - Qt — LGPLv3/GPLv3/коммерческая.
 - FreeCAD — LGPL-2.1-or-later.
 - CadQuery — Apache-2.0; OCCT — LGPL-2.1 с исключением.
-- CuraEngine, PrusaSlicer/OrcaSlicer — AGPL-3.0.
+- PrusaSlicer/OrcaSlicer — AGPL-3.0.
 - Moonraker — GPL-3.0.
 - Лицензия самого MeshVault пока не зафиксирована — открытый вопрос.
 

@@ -55,7 +55,7 @@ FastAPI (server/)
                   ← статус каждые 3 с ← /printer/objects/query
 ```
 
-Слайсинг запланирован как отдельный сервис: `CuraEngine` (LGPL) или `PrusaSlicer/OrcaSlicer CLI`. Пути задаются в `.env`.
+Серверный слайсинг не планируется: модель отправляется во внешний GUI-слайсер. Для CLI-адаптера в `.env` предусмотрен `MESHVault_PRUSASLICER_PATH`; OrcaSlicer определяется автоматически или добавляется вручную.
 
 ## API (основное)
 
@@ -81,4 +81,4 @@ POST   /api/jobs/{id}/pause|resume|cancel
 - **Единицы:** STL безразмерный, считаем мм; glTF формально метры, но в 3D-печати почти всегда мм — показываем мм.
 - **Большие меши:** сервер может отдавать упрощённый GLB/LOD; сейчас этого нет.
 - **STEP/IGES:** конвертируются в STL через FreeCADCmd (`app/freecad/cad_to_stl.py`); если FreeCAD нет, для STEP доступен CadQuery из extra `cad`.
-- **Лицензии:** Qt — LGPLv3/коммерческая; CuraEngine — LGPL; PrusaSlicer/Orca — AGPL; OCCT — LGPL с исключением.
+- **Лицензии:** Qt — LGPLv3/коммерческая; PrusaSlicer/Orca — AGPL; OCCT — LGPL с исключением.

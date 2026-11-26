@@ -33,7 +33,6 @@ class Settings(BaseSettings):
     slicer_path: str | None = None
     thumbnail_size: int = 512
 
-    curaengine_path: str | None = None
     prusaslicer_path: str | None = None
 
     max_upload_mb: int = 512

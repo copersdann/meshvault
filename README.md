@@ -101,7 +101,6 @@ Copy-Item .env.example .env
 | `MESHVault_SECRET_KEY` | ключ шифрования API-ключей принтеров | `change-me-in-production` |
 | `MESHVault_FREECAD_PATH` | путь к FreeCADCmd для STEP/IGES | автоопределение |
 | `MESHVault_SLICER_PATH` | путь к GUI-слайсеру для «Открыть в слайсере» | автоопределение |
-| `MESHVault_CURAENGINE_PATH` | путь к CuraEngine для слайсинга | пусто |
 | `MESHVault_PRUSASLICER_PATH` | путь к PrusaSlicer CLI | пусто |
 | `MESHVault_MAX_UPLOAD_MB` | лимит загрузки | `512` |
 
@@ -139,7 +138,7 @@ API: `GET/PUT /api/import/config`, `POST /api/import/scan`.
 
 ## Печать
 
-Сейчас поддерживается загрузка готового G-code на Moonraker. Слайсинг на сервере — следующий этап (адаптеры CuraEngine / PrusaSlicer уже заложены в конфиг).
+Сейчас поддерживается загрузка готового G-code на Moonraker. Серверный слайсинг не планируется: модель отправляется во внешний слайсер. Для CLI-интеграции в конфиге остаётся только `MESHVault_PRUSASLICER_PATH`; OrcaSlicer определяется автоматически или добавляется вручную.
 
 См. [docs/MOONRAKER.md](docs/MOONRAKER.md).
 
