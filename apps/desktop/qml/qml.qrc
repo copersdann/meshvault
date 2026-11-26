@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/qml">
+        <file>main.qml</file>
+        <file>Theme.qml</file>
+        <file>ModelCard.qml</file>
+        <file>ModelViewer3D.qml</file>
+        <file>ViewerSettings.qml</file>
+        <file>ViewerControls.qml</file>
+        <file>CatalogSettings.qml</file>
+        <file>PrinterCard.qml</file>
+        <file>JobRow.qml</file>
+        <file>UploadDialog.qml</file>
+        <file>PrinterDialog.qml</file>
+        <file>UrlImportDialog.qml</file>
+        <file>ShelfDialog.qml</file>
+        <file>ProfilesDialog.qml</file>
+        <file>LibraryPage.qml</file>
+        <file>ModelPage.qml</file>
+        <file>PrintersPage.qml</file>
+        <file>JobsPage.qml</file>
+        <file>SettingsPage.qml</file>
+    </qresource>
+</RCC>

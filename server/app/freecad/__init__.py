@@ -1,0 +1,1 @@
+"""Helpers executed inside FreeCADCmd."""

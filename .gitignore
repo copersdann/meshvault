@@ -1,0 +1,54 @@
+# Python / server
+server/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+server/data/
+data/
+*.db
+*.db-wal
+*.db-shm
+server/.tmp_test/
+release/
+
+# Environment and secrets
+.env
+.env.local
+
+# Qt / C++ build artifacts
+apps/desktop/build/
+*.user
+*.ilk
+*.pdb
+*.obj
+*.exe
+
+# Android / Gradle
+apps/android/.gradle/
+apps/android/build/
+apps/android/app/build/
+apps/android/local.properties
+.gradle/
+local.properties
+*.apk
+*.aab
+
+# Node / web (for future client)
+node_modules/
+apps/web/dist/
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Устаревшие/локальные каталоги
+windows/
+deploy/
+
+# Logs / temp
+*.log
+*.tmp
+*.swp
